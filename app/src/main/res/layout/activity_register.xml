@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="50dp"
+        android:text="         Kayıt Ol"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etAdsoyad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittextregister"
+            android:ems="14"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="ad soyad"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etEmail"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextregister"
+            android:ems="14"
+            android:gravity="center"
+            android:hint="Enter name surname"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextregister"
+            android:ems="14"
+            android:gravity="center"
+            android:hint="Enter mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etEmail"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextregister"
+            android:ems="14"
+            android:gravity="center"
+            android:hint="Enter Parola"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etPasswordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etPassword"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextregister"
+            android:elevation="2dp"
+            android:ems="14"
+            android:gravity="center"
+            android:hint="Enter Parola tekrar"
+            android:inputType="textPassword" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/rbtnKadin"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittextregister"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:text="Kadın"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioButton
+                android:id="@+id/rbtnErkek"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/edittextregister"
+                android:text="Erkek"
+                android:textColor="@color/com_facebook_blue" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnRegister"
+            android:layout_alignBottom="@+id/btnRegister"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/sekilbuton"
+            android:text="Cancel"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/btnCancel"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom"
+            android:elevation="1dp"
+            android:onClick="RegisterButton"
+            android:text="Kayıt Ol"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

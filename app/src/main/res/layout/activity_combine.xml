@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:textSize="18sp"
+        android:hint="cins"
+        android:gravity="center"
+        android:layout_below="@+id/spinner"/>
+
+    <EditText
+        android:id="@+id/edtValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="ürünleri tanıtınız"
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/editText2" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Gönder" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSend"
+        android:layout_alignParentEnd="true"
+        android:ems="12"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSend"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtValue"
+        android:layout_toStartOf="@+id/editText2"
+        android:gravity="center"
+        android:text="Fiyat giriniz:"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
